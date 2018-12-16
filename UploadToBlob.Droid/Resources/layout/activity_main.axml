@@ -1,52 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-	android:orientation="vertical"
-	android:padding="10dp">
-	
-    <LinearLayout  
-		android:id="@+id/btns" 
-        android:orientation="horizontal"  
-        android:layout_width="match_parent"  
-        android:layout_height="wrap_content"  
-        android:weightSum="2">  
-        <Button  
-            android:id="@+id/btnChoose"  
-            android:text="Choose"  
-            android:layout_width="0dp"  
-            android:layout_weight="1"  
-            android:layout_height="wrap_content"/>  
-        <Button  
-            android:id="@+id/btnCapture"  
-            android:text="Capture"  
-            android:layout_width="0dp"  
-            android:layout_weight="1"  
-            android:layout_height="wrap_content" />  
-    </LinearLayout>  
-
-	<LinearLayout
-	android:layout_width="match_parent"  
-    android:layout_height="wrap_content"
-	android:orientation="vertical"
-	android:padding="10dp">
-	<ImageView  
-     android:id="@+id/imgView"  
-     android:layout_width="340dp"  
-     android:layout_height="350dp"/>
-
-	<Button  
-     android:id="@+id/btnUpload"  
-     android:text="Upload"  
-     android:layout_width="match_parent"   
-     android:layout_height="wrap_content" />
-
-	<EditText
-	android:id="@+id/edtURL"	
-	android:layout_width="match_parent"  
-    android:layout_height="wrap_content" 
-	android:text="URL:"/>
-		</LinearLayout>
+    android:padding="10dp">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:id="@+id/btns">
+        <Button
+            android:id="@+id/btnChoose"
+            android:text="Choose"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/btnCapture"
+            android:text="Capture"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+        <ImageView
+            android:id="@+id/imgView"
+            android:layout_width="350dp"
+            android:layout_height="300dp" />
+        <Button
+            android:id="@+id/btnUpload"
+            android:text="Upload"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/edtURL"
+            android:text="URL:"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressBar"
+            android:visibility="invisible" />
+    </LinearLayout>
 </LinearLayout>
